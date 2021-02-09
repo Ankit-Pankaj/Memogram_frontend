@@ -1,0 +1,33 @@
+.App {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .post-container {
+    /* width:0px; */
+    /* height:350px; */
+    height:auto;
+    width:auto;
+    background:#cac6cb;
+    margin-bottom:10px;
+    border:0px;
+    padding:0px;
+  }
+  .post-section {
+    display: flex;
+    margin-top:6px;
+    /* align-items: center; */
+    justify-content: center;
+  }
+  ul {
+    list-style: none;
+  }
+  .post-container .image{
+    /* display: block; */
+    max-width: 280px;
+    /* max-height:100px; */
+    /* margin:10px; */
+  } 
+    
