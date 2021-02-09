@@ -17,17 +17,18 @@
   }
   .post-section {
     display: flex;
-    margin-top:6px;
+    /* flex-direction: row; */
+    margin-top:4px;
     /* align-items: center; */
     justify-content: center;
+
   }
   ul {
     list-style: none;
   }
   .post-container .image{
-    /* display: block; */
-    max-width: 280px;
-    /* max-height:100px; */
+    /* justify-content: center; */
+    max-width: 290px;
+   /* max-height:100px; */
     /* margin:10px; */
   } 
-    

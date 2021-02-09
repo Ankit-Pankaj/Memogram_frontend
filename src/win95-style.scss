@@ -597,3 +597,46 @@ img {
 		box-shadow: none;
 	}
 }
+
+.userName{
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+    color:$bl;
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+    margin-top:6px;
+}
+figcaptionn{
+    display:flex;
+    flex-direction:row;
+
+    :last-of-type{
+        margin-left:auto;
+        margin-right:6px;
+    }
+}
+figcaptionn button{   
+    display: inline;
+    margin-left:6px;
+}
+.likes{
+    margin:6px;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    color:#464147;
+}
+#username{
+    font-size: 11px;
+    margin-right:10px;
+    margin-left:0px;
+}
+.caption{
+    margin-left:6px;
+    font-weight: 400;
+    line-height: 13.2px;
+    color:#464147;
+    font-family: Tahoma, Helvetica, Arial, sans-serif;
+    font-size:11px;
+    margin-bottom: 35px;
+}

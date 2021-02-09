@@ -753,4 +753,57 @@ img {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+
+.userName {
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  color: black;
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: 10px;
+  margin-bottom: 7px;
+  margin-top: 6px;
+}
+
+figcaptionn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+figcaptionn :last-of-type {
+  margin-left: auto;
+  margin-right: 6px;
+}
+
+figcaptionn button {
+  display: inline;
+  margin-left: 6px;
+}
+
+.likes {
+  margin: 6px;
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  color: #464147;
+}
+
+#username {
+  font-size: 11px;
+  margin-right: 10px;
+  margin-left: 0px;
+}
+
+.caption {
+  margin-left: 6px;
+  font-weight: 400;
+  line-height: 13.2px;
+  color: #464147;
+  font-family: Tahoma, Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  margin-bottom: 35px;
+}
 /*# sourceMappingURL=win95-style.css.map */

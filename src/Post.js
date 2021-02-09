@@ -9,11 +9,24 @@ function Post(props) {
   };
 
   return (
-    <div className="">
-      <button className="post-container" onClick={clickHandler}>
-      
-        <img className="image" src={props.url} />
+    <div>
+      <div className="userName">{props.name}</div>
+      <button className="post-container" onClick={clickHandler}> 
+      <img className="image" src={props.url} />
       </button>
+      <figcaptionn>
+        
+          <button>Like</button>
+          <button>Comment</button>
+          <button>Share</button>
+      
+          <button>Edit </button>    
+      </figcaptionn>
+      <div className="likes">Liked by {props.likes} people</div>
+      <div className="caption">
+        <span className="userName" id="username">{props.name}</span>
+        <span>{props.caption}</span>
+      </div>
       {formVisible && (
         <div class="edit-form">
           <input type="text" placeholder="enter caption"></input>
