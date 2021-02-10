@@ -3,14 +3,19 @@ import "./styles.css";
 
 function Post(props) {
   const [formVisible, setFormVisible] = useState(false);
+  const [like, setLike]= useState(0);
 
   const clickHandler = () => {
     setFormVisible(!formVisible);
   };
 
+  const likeHandler = ()=>{
+
+  }
+  // const theme="default95";
   return (
-    <div>
-      <div className="userName">{props.name}</div>
+    <div >
+      <div className="userName" >{props.name}</div>
       <button className="post-container" onClick={clickHandler}> 
       <img className="image" src={props.url} />
       </button>
@@ -20,7 +25,7 @@ function Post(props) {
           <button>Comment</button>
           <button>Share</button>
       
-          <button>Edit </button>    
+          <button onClick={clickHandler}>Edit </button>    
       </figcaptionn>
       <div className="likes">Liked by {props.likes} people</div>
       <div className="caption">

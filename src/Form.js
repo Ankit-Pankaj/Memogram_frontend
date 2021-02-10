@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import "./win95-style.scss";
 import axios from "axios"
 function Form () {
 
@@ -96,7 +97,7 @@ const clickHandler =async (event) => {
     <div><ul>{meme.map((memes, index) => <li key={index}>{memes.name} </li>)}</ul></div>
   
     
-      </>
+      </ >
     )
   
  

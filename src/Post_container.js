@@ -23,7 +23,7 @@ const arr = [
   {
     name: "Prashant",
     caption: "default caption4",
-    url: "https://www.dictionary.com/e/wp-content/uploads/2018/03/dank-meme.jpg",
+    url: "https://www.google.com/",
     likes:10
   },
   {

@@ -7,7 +7,7 @@ import "./win95-style.scss";
 
 function App() {
   return (
-    <div>
+    <div class="light">
       {/* <Form/> */}
       <MemeWindow />
       {/* <PostContainer/> */}

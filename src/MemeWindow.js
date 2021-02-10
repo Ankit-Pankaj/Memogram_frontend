@@ -18,7 +18,7 @@ const MemeWindow=()=>{
     <nav class="menu">
       <ul>
         <li>
-          <a href="https://codepen.io/" target="_blank">Codepen</a>
+          <a href="https://github.com/Ankit-Pankaj" target="_blank">Github</a>
         </li>
         <li>
           <a href="https://codepen.io/louh/pen/oZJQvm" target="_blank">Scrollbars</a>
@@ -46,10 +46,11 @@ const MemeWindow=()=>{
           </div>
         </div>
         <div class="content-section profile">
-          <header id="info"></header>
+          <header id="info">test header</header>
           <div class="feed">
-            <div class="feed-type" id="profile"></div>
+            <div class="feed-type" id="profile">Test Feed</div>
           </div>
+          test text
         </div>
       </div>
     </div>
