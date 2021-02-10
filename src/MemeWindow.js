@@ -1,7 +1,7 @@
 import "./win95-style.scss";
 
 import PostContainer from "./Post_container";
-const MemeWindow=()=>{
+const MemeWindow=(props)=>{
    
     return (
         <>
@@ -42,7 +42,7 @@ const MemeWindow=()=>{
       <div class="content" style={{height:"502px", width:"312px"}}>
         <div class="content-section home">
           <div class="feed">
-            <div class="feed-type" id="home"><PostContainer/></div>
+            <div class="feed-type" id="home"><PostContainer a={props.a} b={props.b}/></div>
           </div>
         </div>
         <div class="content-section profile">

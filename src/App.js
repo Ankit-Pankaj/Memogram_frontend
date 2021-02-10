@@ -1,16 +1,41 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Form from "./Form";
 import PostContainer from "./Post_container";
 import MemeWindow from "./MemeWindow";
 import "./reset.css";
 import "./win95-style.scss";
+import axios from "axios"
 
 function App() {
+  
+  const [meme,setMeme]=useState([]);
+  
+  const fetchMeme= async ()=>{
+
+      await axios.get('http://localhost:3000/memes').then((response) => {
+        // console.log(response.data.data)
+        let data = [];
+        // console.log(response.data.data.length);
+  
+        for(var i =0; i < response.data.data.length; i++){
+            data.push(response.data.data[i])
+        }
+        // this.setState({todos: data})
+        setMeme(data);
+    });     
+
+  }
+
+  useEffect(() => {
+    fetchMeme();
+
+    },[]);
+
   return (
     <div class="light">
-      {/* <Form/> */}
-      <MemeWindow />
-      {/* <PostContainer/> */}
+      {/* <Form a={fetchMeme} b={meme} /> */}
+      <MemeWindow a={fetchMeme} b={meme}/>
+      {/* <PostContainer a={fetchMeme} b={meme}/> */}
     </div>
   );
 }

@@ -1,15 +1,16 @@
 import React, {useState, useEffect} from 'react';
 import "./win95-style.scss";
-import axios from "axios"
-function Form () {
+import axios from "axios";
+//running on port 3001
 
-  //running on port 3001
+
+function Form (props) {
 
 const [caption,setCaption] = useState("default caption");
 const [name, setName] = useState("");
 const [img_url, setImgurl]= useState("");
 
-const [meme,setMeme]=useState([]);
+const [meme,setMeme]=useState([]); // Contains all the data of memes
 
 const captionChangeHandler = (event) => {
     // console.log("caption: "+event.target.value);
@@ -25,7 +26,7 @@ const imgurlChangeHandler=(event)=>{
 }
 
 
-
+// -----------------------------------------------------------------------------
 const clickHandler =async (event) => {
     event.preventDefault();
     console.log(event);
@@ -43,34 +44,50 @@ const clickHandler =async (event) => {
     setCaption("");
     setName("");
 
-    axios.get('http://localhost:3000/memes').then((response) => {
-            console.log(response.data.data)
-            let data = [];
-            console.log(response.data.data.length);
+    // axios.get('http://localhost:3000/memes').then((response) => {
+    //         console.log(response.data.data)
+    //         let data = [];
+    //         console.log(response.data.data.length);
 
-            for(var i =0; i < response.data.data.length; i++){
-                data.push(response.data.data[i])
-            }
-            // this.setState({todos: data})
-            setMeme(data);
-        });
-
+    //         for(var i =0; i < response.data.data.length; i++){
+    //             data.push(response.data.data[i])
+    //         }
+    //         // this.setState({todos: data})
+    //         setMeme(data);
+    //     });
+    // console.log(props);
+    props.a();
   }
+  // ---------------------------------------------------------------------------
+  // const editHandler=async (event)=>{
+  //   event.preventDefault();
+  //   // console.log(event);
+  //   await axios({
+  //     method:'patch',
+  //     url: 'http://localhost:3000/memes/id',
+  //     data:{
+  //       url:img_url,
+  //       caption:caption,
+  //     }
 
+  //   })
+
+  // }
+// -----------------------------------------------------------------------------
   useEffect(() => {
     
-    axios.get('http://localhost:3000/memes').then((response) => {
-      console.log(response.data.data)
-      let data = [];
-      console.log(response.data.data.length);
+  //   axios.get('http://localhost:3000/memes').then((response) => {
+  //     console.log(response.data.data)
+  //     let data = [];
+  //     console.log(response.data.data.length);
 
-      for(var i =0; i < response.data.data.length; i++){
-          data.push(response.data.data[i])
-      }
-      // this.setState({todos: data})
-      setMeme(data);
-  });
-    
+  //     for(var i =0; i < response.data.data.length; i++){
+  //         data.push(response.data.data[i])
+  //     }
+  //     // this.setState({todos: data})
+  //     setMeme(data);
+  // });
+  // props.a();
   },[]);
 
 // axios.post('http://localhost:3000', { owner, caption, img_url }); shortform to send axios request
@@ -94,7 +111,7 @@ const clickHandler =async (event) => {
     </div>
     <input type="submit" onClick={clickHandler}/>
     </form> 
-    <div><ul>{meme.map((memes, index) => <li key={index}>{memes.name} </li>)}</ul></div>
+    <div><ul>{props.b.map((memes, index) => <li key={index}>{memes.name} </li>)}</ul></div>
   
     
       </ >
