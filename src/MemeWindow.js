@@ -42,7 +42,7 @@ const MemeWindow=(props)=>{
       <div class="content" style={{height:"502px", width:"312px"}}>
         <div class="content-section home">
           <div class="feed">
-            <div class="feed-type" id="home"><PostContainer a={props.a} b={props.b}/></div>
+            <div class="feed-type" id="home"><PostContainer fetchMeme={props.fetchMeme} memeArray={props.memeArray}/></div>
           </div>
         </div>
         <div class="content-section profile">

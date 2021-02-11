@@ -48,7 +48,7 @@ function PostContainer(props) {
   return (
     <div className="post-section">
       <ul>
-        {props.b.map((val) => (
+        {props.memeArray.map((val) => (
           <li>
             <Post url={val.url} name={val.name} likes={val.likes} caption={val.caption}  onClick={clickHandler} />
           </li>

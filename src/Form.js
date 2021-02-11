@@ -111,7 +111,7 @@ const clickHandler =async (event) => {
     </div>
     <input type="submit" onClick={clickHandler}/>
     </form> 
-    <div><ul>{props.b.map((memes, index) => <li key={index}>{memes.name} </li>)}</ul></div>
+    <div><ul>{props.memeArray.map((memes, index) => <li key={index}>{memes.name} </li>)}</ul></div>
   
     
       </ >
