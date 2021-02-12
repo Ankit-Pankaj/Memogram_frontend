@@ -6,23 +6,23 @@ import axios from "axios";
 
 function Form (props) {
 
-const [caption,setCaption] = useState("");
-const [name, setName] = useState("");
-const [img_url, setImgurl]= useState("");
+// const [caption,setCaption] = useState("");
+// const [name, setName] = useState("");
+// const [img_url, setImgurl]= useState("");
 
 const [meme,setMeme]=useState([]); // Contains all the data of memes
 
 const captionChangeHandler = (event) => {
     // console.log("caption: "+event.target.value);
-    setCaption(event.target.value);
+    props.setCaption(event.target.value);
 }
 const nameChangeHandler=(event)=>{
   // console.log("caption: "+event.target.value);
-    setName(event.target.value);
+    props.setName(event.target.value);
 }
 const imgurlChangeHandler=(event)=>{
   // console.log("caption: "+event.target.value);
-    setImgurl(event.target.value);
+    props.setImgurl(event.target.value);
 }
 
 
@@ -34,15 +34,15 @@ const clickHandler =async (event) => {
       method:'post',
       url: 'http://localhost:3000/memes',
       data:{
-        name:name,
-        url:img_url,
-        caption:caption,
+        name:props.name,
+        url:props.img_url,
+        caption:props.caption,
       }
 
     })
-    setImgurl("");
-    setCaption("");
-    setName("");
+    props.setImgurl("");
+    props.setCaption("");
+    props.setName("");
 
     // axios.get('http://localhost:3000/memes').then((response) => {
     //         console.log(response.data.data)
@@ -66,14 +66,17 @@ const clickHandler =async (event) => {
       method:'patch',
       url: 'http://localhost:3000/memes/id',
       data:{
-        url:img_url,
-        caption:caption,
+        url:props.img_url,
+        caption:props.caption,
       }
 
     })
 
   }
 // -----------------------------------------------------------------------------
+// const handleImageError=(ev)=>{
+//   ev.target.src="https://www.meme-arsenal.com/memes/c9e6371faa3b57eaee1d35595ca8e910.jpg"
+// }
 
 
 // axios.post('http://localhost:3000', { owner, caption, img_url }); shortform to send axios request
@@ -84,19 +87,20 @@ const clickHandler =async (event) => {
       <>
      <form id="userform" method="POST">
     <div><label for="owner"> Meme Owner  </label>
-    <input type="text" id="owner" name="owner" onChange={nameChangeHandler} value={name} placeholder="enter your name"></input>
+    <input type="text" id="owner" name="owner" onChange={nameChangeHandler} value={props.name} placeholder="Enter your name"></input>
     </div>
    
     <div>
      <label for="caption" >Caption  </label>
-    <input type="text" id="caption" name="caption" onChange={captionChangeHandler}  value={caption} placeholder={caption}/>
+    <input type="text" id="caption" name="caption" onChange={captionChangeHandler}  value={props.caption} placeholder="Enter caption"/>
     </div>
      <div>
      <label for="image">Image URL  </label>
-    <input type="url" id="image" name="img_url" onChange={imgurlChangeHandler} value={img_url} placeholder="enter image url"/>
+    <input type="url" id="image" name="img_url" onChange={imgurlChangeHandler} value={props.img_url} placeholder="Enter image url"/>
     </div>
     <input type="submit" onClick={clickHandler}/>
     </form> 
+    <div className="temp" ></div>
     {/* <div><ul>{props.memeArray.map((memes, index) => <li key={index}>{memes.name} </li>)}</ul></div> */}
   
     

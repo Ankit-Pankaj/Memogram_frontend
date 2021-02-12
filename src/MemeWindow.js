@@ -1,7 +1,29 @@
 import "./win95-style.scss";
 import Form from './Form'
+import {useState} from 'react'
 import PostContainer from "./Post_container";
+import Profile from "./Profile"
 const MemeWindow=(props)=>{
+    
+    const [caption,setCaption] = useState("");
+    const [name, setName] = useState("");
+    const [img_url, setImgurl]= useState("");
+
+    // const [meme,setMeme]=useState([]); // Contains all the data of memes
+
+    // const captionChangeHandler = (event) => {
+    //     // console.log("caption: "+event.target.value);
+    //     setCaption(event.target.value);
+    // }
+    // const nameChangeHandler=(event)=>{
+    // // console.log("caption: "+event.target.value);
+    //     setName(event.target.value);
+    // }
+    // const imgurlChangeHandler=(event)=>{
+    // // console.log("caption: "+event.target.value);
+    //     setImgurl(event.target.value);
+    // }
+
    
     return (
         <>
@@ -46,11 +68,19 @@ const MemeWindow=(props)=>{
           </div>
         </div>
         <div class="content-section profile">
-          <header id="info">test header</header>
+          <header id="info"></header>
           <div class="feed">
-            <div class="feed-type" id="profile">Test Feed</div>
+            <div class="feed-type" id="profile"></div>
           </div>
-          <Form fetchMeme={props.fetchMeme} memeArray={props.memeArray}/>
+          <Profile  fetchMeme={props.fetchMeme} memeArray={props.memeArray}/>
+          {/* <Form 
+            fetchMeme={props.fetchMeme} 
+            memeArray={props.memeArray} 
+            caption={caption} 
+            setCaption={setCaption} 
+            name={name} setName={setName} 
+            img_url={img_url} 
+            setImgurl={setImgurl}/> */}
         </div>
       </div>
     </div>
