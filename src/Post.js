@@ -10,6 +10,16 @@ function Post(props) {
     setFormVisible(!formVisible);
   };
 
+  const [caption, setCaption] = useState("");
+  const [url, setURL] = useState("");
+
+  const captionChangeHandler=(event)=>{
+    setCaption(event.target.value);
+  }
+  const urlChangeHandler=(event)=>{
+    setURL(event.target.value);
+    // console.log(url);
+  }
 
   // ------------------*-*-*-*- Important -*-*-*-*--------------------------------------- 
 
@@ -33,20 +43,26 @@ function Post(props) {
     setLikes(likes+1);
   }
 
-  // const editHandler=async (event)=>{
-  //   event.preventDefault();
-  //   // console.log(event);
-  //   await axios({
-  //     method:'patch',
-  //     url: 'http://localhost:3000/memes/id',
-  //     data:{
-  //       url:"",
-  //       caption:"caption",
-  //     }
+  const editHandler=async (event)=>{
+    // event.preventDefault();
+    // console.log(event);
+    // console.log(event.target.value);
+    // console.log(url,caption);
+    const requesturl = "http://localhost:3000/memes/"+props.id;
+    await axios({
+      method:'patch',
+      url: requesturl,
+      data:{
+        url:url,
+        caption:caption,
+        likes:0,
+      }
 
-  //   })
+    })
+    setURL("");
+    setCaption("");
+  }
 
-  // }
   return (
     <div >
       <div className="userName" >{props.name}</div>
@@ -68,9 +84,9 @@ function Post(props) {
       </div>
       {formVisible && (
         <div class="edit-form">
-          <input type="text" placeholder="enter caption" ></input>
-          <input type="text" placeholder="enter url" ></input>
-          <button onClick={likeHandler}>Submit</button>
+          <input type="text" placeholder="enter caption" value={caption} onChange={captionChangeHandler}></input>
+          <input type="text" placeholder="enter url" value={url} onChange={urlChangeHandler}></input>
+          <button onClick={editHandler}>Submit</button>
         </div>
       )}
     </div>

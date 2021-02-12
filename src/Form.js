@@ -6,7 +6,7 @@ import axios from "axios";
 
 function Form (props) {
 
-const [caption,setCaption] = useState("default caption");
+const [caption,setCaption] = useState("");
 const [name, setName] = useState("");
 const [img_url, setImgurl]= useState("");
 
@@ -56,39 +56,25 @@ const clickHandler =async (event) => {
     //         setMeme(data);
     //     });
     // console.log(props);
-    props.a();
+    props.fetchMeme();
   }
   // ---------------------------------------------------------------------------
-  // const editHandler=async (event)=>{
-  //   event.preventDefault();
-  //   // console.log(event);
-  //   await axios({
-  //     method:'patch',
-  //     url: 'http://localhost:3000/memes/id',
-  //     data:{
-  //       url:img_url,
-  //       caption:caption,
-  //     }
+  const editHandler=async (event)=>{
+    event.preventDefault();
+    // console.log(event);
+    await axios({
+      method:'patch',
+      url: 'http://localhost:3000/memes/id',
+      data:{
+        url:img_url,
+        caption:caption,
+      }
 
-  //   })
+    })
 
-  // }
+  }
 // -----------------------------------------------------------------------------
-  useEffect(() => {
-    
-  //   axios.get('http://localhost:3000/memes').then((response) => {
-  //     console.log(response.data.data)
-  //     let data = [];
-  //     console.log(response.data.data.length);
 
-  //     for(var i =0; i < response.data.data.length; i++){
-  //         data.push(response.data.data[i])
-  //     }
-  //     // this.setState({todos: data})
-  //     setMeme(data);
-  // });
-  // props.a();
-  },[]);
 
 // axios.post('http://localhost:3000', { owner, caption, img_url }); shortform to send axios request
 
@@ -111,7 +97,7 @@ const clickHandler =async (event) => {
     </div>
     <input type="submit" onClick={clickHandler}/>
     </form> 
-    <div><ul>{props.memeArray.map((memes, index) => <li key={index}>{memes.name} </li>)}</ul></div>
+    {/* <div><ul>{props.memeArray.map((memes, index) => <li key={index}>{memes.name} </li>)}</ul></div> */}
   
     
       </ >

@@ -1,5 +1,5 @@
 import "./win95-style.scss";
-
+import Form from './Form'
 import PostContainer from "./Post_container";
 const MemeWindow=(props)=>{
    
@@ -50,7 +50,7 @@ const MemeWindow=(props)=>{
           <div class="feed">
             <div class="feed-type" id="profile">Test Feed</div>
           </div>
-          test text
+          <Form fetchMeme={props.fetchMeme} memeArray={props.memeArray}/>
         </div>
       </div>
     </div>
