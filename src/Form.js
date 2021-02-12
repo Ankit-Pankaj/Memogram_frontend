@@ -32,7 +32,7 @@ const clickHandler =async (event) => {
     console.log(event);
     await axios({
       method:'post',
-      url: 'http://localhost:3000/memes',
+      url: 'http://localhost:8081/memes',
       data:{
         name:props.name,
         url:props.img_url,
@@ -64,7 +64,7 @@ const clickHandler =async (event) => {
     // console.log(event);
     await axios({
       method:'patch',
-      url: 'http://localhost:3000/memes/id',
+      url: 'http://localhost:8081/memes/id',
       data:{
         url:props.img_url,
         caption:props.caption,
@@ -75,7 +75,7 @@ const clickHandler =async (event) => {
   }
 // -----------------------------------------------------------------------------
 // const handleImageError=(ev)=>{
-//   ev.target.src="https://www.meme-arsenal.com/memes/c9e6371faa3b57eaee1d35595ca8e910.jpg"
+//   ev.target.src="https://cdn.pixabay.com/photo/2019/07/15/23/51/magnifying-4340698_1280.jpg"
 // }
 
 

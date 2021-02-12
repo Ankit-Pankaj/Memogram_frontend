@@ -12,13 +12,13 @@ function App() {
   
   const fetchMeme= async ()=>{
 
-      await axios.get('http://localhost:3000/memes').then((response) => {
+      await axios.get('http://localhost:8081/memes').then((response) => {
         // console.log(response.data.data)
         let data = [];
         // console.log(response.data.data.length);
   
-        for(var i =0; i < response.data.data.length; i++){
-            data.push(response.data.data[i])
+        for(var i =0; i < response.data.length; i++){
+            data.push(response.data[i])
         }
         // this.setState({todos: data})
         setMeme(data);

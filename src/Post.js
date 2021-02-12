@@ -33,7 +33,7 @@ function Post(props) {
   // function to increase likes
   const likeHandler = async (event)=>{
     event.preventDefault();
-    const url = "http://localhost:3000/memes/"+props.id;
+    const url = "http://localhost:8081/memes/"+props.id;
     // console.log(url);
     // console.log(event);
     await axios({
@@ -48,7 +48,7 @@ function Post(props) {
     // console.log(event);
     // console.log(event.target.value);
     // console.log(url,caption);
-    const requesturl = "http://localhost:3000/memes/"+props.id;
+    const requesturl = "http://localhost:8081/memes/"+props.id;
     await axios({
       method:'patch',
       url: requesturl,
