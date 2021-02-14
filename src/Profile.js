@@ -19,10 +19,10 @@ const Profile = (props) => {
   const [img_url, setImgurl] = useState("");
 
   return (
-    <div class="content-section profile">
+    <div className="content-section profile">
       <header id="info"></header>
-      <div class="feed">
-        <div class="feed-type" id="profile">
+      <div className="feed">
+        <div className="feed-type" id="profile">
           {/* Test Feed */}
           <img src={img_url} onError={handleImageError}></img>
         </div>

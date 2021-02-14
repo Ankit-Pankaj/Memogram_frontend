@@ -32,7 +32,7 @@ function App() {
     },[]);
 
   return (
-    <div class="light">
+    <div className="light">
       {/* <Form a={fetchMeme} b={meme} /> */}
       <MemeWindow fetchMeme={fetchMeme} memeArray={meme}/>
       {/* <PostContainer a={fetchMeme} b={meme}/> */}
