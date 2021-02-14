@@ -4,7 +4,7 @@ const Profile = (props) => {
  
     const handleImageError=(ev)=>{
         console.log(ev.target.src);
-        if(ev.target.src==="http://localhost:3001/"){
+        if(ev.target.src==="https://memogram.netlify.app/"){
             ev.target.src= "https://i.imgflip.com/23fdf5.jpg"
         }
         else{
