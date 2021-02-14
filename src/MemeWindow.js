@@ -27,7 +27,7 @@ const MemeWindow=(props)=>{
    
     return (
         <>
-        <main className="instagram" >
+        <main className="memogram" >
   <div className="inner">
     <header className="bar">
       <h1>Memogram.exe</h1>
@@ -60,7 +60,7 @@ const MemeWindow=(props)=>{
       <input className="menu-input" disabled={true} id="input-activity" name="menu" type="radio"></input>
       <label className="menu-label" for="input-activity">Activity</label>
       <input className="menu-input" id="input-profile" name="menu" type="radio"></input>
-      <label className="menu-label" for="input-profile">Profile</label>
+      <label className="menu-label" for="input-profile">Upload</label>
       <div className="content" style={{height:"502px", width:"312px"}}>
         <div className="content-section home">
           <div className="feed">
