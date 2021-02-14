@@ -46,7 +46,7 @@ const MemeWindow=(props)=>{
           <a href="https://www.linkedin.com/in/ankit-pankaj-411229b3/" target="_blank">Linkedin</a>
         </li>
         <li>
-          <a href="https://dribbble.com/shots/2872044-Instagram-For-Windows-95" target="_blank">Inspiration</a>
+          <a href="https://www.instagram.com/ankit_pankaj/" target="_blank">Instagram</a>
         </li>
       </ul>
     </nav>
