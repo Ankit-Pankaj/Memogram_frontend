@@ -32,7 +32,7 @@ const clickHandler =async (event) => {
     console.log(event);
     await axios({
       method:'post',
-      url: 'http://localhost:8081/memes',
+      url: 'https://memogram-backend.herokuapp.com/memes',
       data:{
         name:props.name,
         url:props.img_url,
@@ -64,7 +64,7 @@ const clickHandler =async (event) => {
     // console.log(event);
     await axios({
       method:'patch',
-      url: 'http://localhost:8081/memes/id',
+      url: 'https://memogram-backend.herokuapp.com/memes/id',
       data:{
         url:props.img_url,
         caption:props.caption,

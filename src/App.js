@@ -12,7 +12,7 @@ function App() {
   
   const fetchMeme= async ()=>{
 
-      await axios.get('http://localhost:8081/memes').then((response) => {
+      await axios.get('https://memogram-backend.herokuapp.com/memes').then((response) => {
         // console.log(response.data.data)
         let data = [];
         // console.log(response.data.data.length);
