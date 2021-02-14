@@ -35,16 +35,16 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #149091;
+  background: #E0D2C5;
   padding: 12px;
-  color: black;
+  color: #464147;
   font-family: Tahoma, Helvetica, Arial, sans-serif;
   font-size: 11px;
   line-height: 11px;
 }
 
 button, input {
-  color: black;
+  color: #464147;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -69,19 +69,19 @@ button {
   height: 22px;
   border: 0;
   padding: 0 6px 1px;
-  background: #C0C0C0;
-  -webkit-box-shadow: inset -1px -1px 0 0 black, inset 1px 1px 0 0 white, inset -2px -2px 0 0 #888, inset 2px 2px 0 0 #ddd;
-          box-shadow: inset -1px -1px 0 0 black, inset 1px 1px 0 0 white, inset -2px -2px 0 0 #888, inset 2px 2px 0 0 #ddd;
+  background: #cac6cb;
+  -webkit-box-shadow: inset -1px -1px 0 0 #464147, inset 1px 1px 0 0 white, inset -2px -2px 0 0 #a099a1, inset 2px 2px 0 0 #dedcde;
+          box-shadow: inset -1px -1px 0 0 #464147, inset 1px 1px 0 0 white, inset -2px -2px 0 0 #a099a1, inset 2px 2px 0 0 #dedcde;
 }
 
 button:active {
   background-color: white;
-  background-image: linear-gradient(45deg, #e6e6e6 25%, transparent 25%, transparent 75%, #e6e6e6 75%, #e6e6e6), linear-gradient(45deg, #e6e6e6 25%, transparent 25%, transparent 75%, #e6e6e6 75%, #e6e6e6);
+  background-image: linear-gradient(45deg, #efeef0 25%, transparent 25%, transparent 75%, #efeef0 75%, #efeef0), linear-gradient(45deg, #efeef0 25%, transparent 25%, transparent 75%, #efeef0 75%, #efeef0);
   background-size: 2px 2px;
   background-position: 0 0, 1px 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 white, inset 1px 1px 0 0 black, inset -2px -2px 0 0 #ddd, inset 2px 2px 0 0 #C0C0C0;
-          box-shadow: inset -1px -1px 0 0 white, inset 1px 1px 0 0 black, inset -2px -2px 0 0 #ddd, inset 2px 2px 0 0 #C0C0C0;
-  color: black;
+  -webkit-box-shadow: inset -1px -1px 0 0 white, inset 1px 1px 0 0 #464147, inset -2px -2px 0 0 #dedcde, inset 2px 2px 0 0 #cac6cb;
+          box-shadow: inset -1px -1px 0 0 white, inset 1px 1px 0 0 #464147, inset -2px -2px 0 0 #dedcde, inset 2px 2px 0 0 #cac6cb;
+  color: #464147;
 }
 
 img {
@@ -124,8 +124,8 @@ img {
   min-height: 400px;
   max-height: 550px;
   padding: 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 black, inset 1px 1px 0 0 #ddd;
-          box-shadow: inset -1px -1px 0 0 black, inset 1px 1px 0 0 #ddd;
+  -webkit-box-shadow: inset -1px -1px 0 0 #464147, inset 1px 1px 0 0 #dedcde;
+          box-shadow: inset -1px -1px 0 0 #464147, inset 1px 1px 0 0 #dedcde;
 }
 
 .instagram .avatar {
@@ -140,9 +140,9 @@ img {
 .instagram .inner {
   width: 100%;
   height: 100%;
-  -webkit-box-shadow: inset -1px -1px 0 0 #888, inset 1px 1px 0 0 white;
-          box-shadow: inset -1px -1px 0 0 #888, inset 1px 1px 0 0 white;
-  background: #C0C0C0;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a099a1, inset 1px 1px 0 0 white;
+          box-shadow: inset -1px -1px 0 0 #a099a1, inset 1px 1px 0 0 white;
+  background: #cac6cb;
   padding: 3px;
 }
 
@@ -160,7 +160,7 @@ img {
           justify-content: space-between;
   height: 18px;
   padding: 2px;
-  background: #00087E;
+  background: #F5C8BF;
   color: white;
 }
 
@@ -176,7 +176,7 @@ img {
 }
 
 .instagram .bar .buttons a {
-  color: black;
+  color: #464147;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,13 +193,13 @@ img {
   padding: 0;
   padding-bottom: 10px;
   border: 0;
-  background: #C0C0C0;
-  -webkit-box-shadow: inset -1px -1px 0 0 black, inset 1px 1px 0 0 white, inset -2px -2px 0 0 #888, inset 2px 2px 0 0 #ddd;
-          box-shadow: inset -1px -1px 0 0 black, inset 1px 1px 0 0 white, inset -2px -2px 0 0 #888, inset 2px 2px 0 0 #ddd;
+  background: #cac6cb;
+  -webkit-box-shadow: inset -1px -1px 0 0 #464147, inset 1px 1px 0 0 white, inset -2px -2px 0 0 #a099a1, inset 2px 2px 0 0 #dedcde;
+          box-shadow: inset -1px -1px 0 0 #464147, inset 1px 1px 0 0 white, inset -2px -2px 0 0 #a099a1, inset 2px 2px 0 0 #dedcde;
 }
 
 .instagram .bar .buttons a:active {
-  color: black;
+  color: #464147;
 }
 
 .instagram .bar .buttons a.minimize:after {
@@ -210,7 +210,7 @@ img {
   left: 4px;
   width: 6px;
   height: 2px;
-  background: black;
+  background: #464147;
 }
 
 .instagram .bar .buttons a.maximize:after {
@@ -221,7 +221,7 @@ img {
   left: 3px;
   width: 8px;
   height: 8px;
-  border: 1px solid black;
+  border: 1px solid #464147;
   border-top-width: 2px;
 }
 
@@ -237,7 +237,7 @@ img {
   margin-left: -1px;
   width: 2px;
   height: 8px;
-  background: black;
+  background: #464147;
 }
 
 .instagram .bar .buttons a.close:before {
@@ -261,7 +261,7 @@ img {
   cursor: default;
   display: block;
   padding: 4px 6px 5px;
-  color: black;
+  color: #464147;
   text-decoration: none;
 }
 
@@ -274,7 +274,7 @@ img {
 }
 
 .instagram .menu a[href]:active {
-  background: #00087E;
+  background: #F5C8BF;
   color: white;
 }
 
@@ -339,9 +339,9 @@ img {
           justify-content: center;
   padding-bottom: 1px;
   z-index: 4;
-  background: #C0C0C0;
-  -webkit-box-shadow: inset -1px -1px 0 0 black, inset 1px 1px 0 0 white, inset -2px -2px 0 0 #888, inset 2px 2px 0 0 #ddd;
-          box-shadow: inset -1px -1px 0 0 black, inset 1px 1px 0 0 white, inset -2px -2px 0 0 #888, inset 2px 2px 0 0 #ddd;
+  background: #cac6cb;
+  -webkit-box-shadow: inset -1px -1px 0 0 #464147, inset 1px 1px 0 0 white, inset -2px -2px 0 0 #a099a1, inset 2px 2px 0 0 #dedcde;
+          box-shadow: inset -1px -1px 0 0 #464147, inset 1px 1px 0 0 white, inset -2px -2px 0 0 #a099a1, inset 2px 2px 0 0 #dedcde;
 }
 
 .instagram .menu-input {
@@ -353,16 +353,16 @@ img {
 
 .instagram .menu-input:not(:disabled):active + label, .instagram .menu-input:checked + label {
   background-color: white;
-  background-image: linear-gradient(45deg, #e6e6e6 25%, transparent 25%, transparent 75%, #e6e6e6 75%, #e6e6e6), linear-gradient(45deg, #e6e6e6 25%, transparent 25%, transparent 75%, #e6e6e6 75%, #e6e6e6);
+  background-image: linear-gradient(45deg, #efeef0 25%, transparent 25%, transparent 75%, #efeef0 75%, #efeef0), linear-gradient(45deg, #efeef0 25%, transparent 25%, transparent 75%, #efeef0 75%, #efeef0);
   background-size: 2px 2px;
   background-position: 0 0, 1px 1px;
-  -webkit-box-shadow: inset -1px -1px 0 0 white, inset 1px 1px 0 0 black, inset -2px -2px 0 0 #ddd, inset 2px 2px 0 0 #C0C0C0;
-          box-shadow: inset -1px -1px 0 0 white, inset 1px 1px 0 0 black, inset -2px -2px 0 0 #ddd, inset 2px 2px 0 0 #C0C0C0;
+  -webkit-box-shadow: inset -1px -1px 0 0 white, inset 1px 1px 0 0 #464147, inset -2px -2px 0 0 #dedcde, inset 2px 2px 0 0 #cac6cb;
+          box-shadow: inset -1px -1px 0 0 white, inset 1px 1px 0 0 #464147, inset -2px -2px 0 0 #dedcde, inset 2px 2px 0 0 #cac6cb;
 }
 
 .instagram .menu-input:disabled + label {
   cursor: default;
-  color: #888;
+  color: #a099a1;
   text-shadow: 1px 1px 0 white;
 }
 
@@ -390,14 +390,14 @@ img {
 
 .profile header h2 a {
   text-decoration: none;
-  color: black;
+  color: #464147;
 }
 
 .profile header hr {
   border-left: 0;
   border-right: 0;
-  border-top-color: #888;
-  border-bottom-color: #ddd;
+  border-top-color: #a099a1;
+  border-bottom-color: #dedcde;
   border-style: solid;
   margin: 0;
   background: none;
@@ -450,7 +450,7 @@ img {
 }
 
 .profile header .info li span {
-  color: #888;
+  color: #a099a1;
 }
 
 .profile header .info li:last-child {
@@ -499,7 +499,7 @@ img {
 }
 
 .profile header .info .desc a {
-  color: black;
+  color: #464147;
 }
 
 .profile .feed {
@@ -508,8 +508,8 @@ img {
 
 .feed {
   padding: 2px;
-  -webkit-box-shadow: inset -1px -1px 0 0 #ddd, inset 1px 1px 0 0 #888, inset -2px -2px 0 0 #C0C0C0, inset 2px 2px 0 0 black;
-          box-shadow: inset -1px -1px 0 0 #ddd, inset 1px 1px 0 0 #888, inset -2px -2px 0 0 #C0C0C0, inset 2px 2px 0 0 black;
+  -webkit-box-shadow: inset -1px -1px 0 0 #dedcde, inset 1px 1px 0 0 #a099a1, inset -2px -2px 0 0 #cac6cb, inset 2px 2px 0 0 #464147;
+          box-shadow: inset -1px -1px 0 0 #dedcde, inset 1px 1px 0 0 #a099a1, inset -2px -2px 0 0 #cac6cb, inset 2px 2px 0 0 #464147;
 }
 
 .feed .feed-type {
@@ -519,7 +519,7 @@ img {
 
 .feed #home a {
   text-decoration: none;
-  color: black;
+  color: #464147;
   font-weight: 700;
 }
 
@@ -600,7 +600,7 @@ img {
 .feed #home figure figcaption .view-all a {
   display: block;
   font-weight: 400;
-  color: #888;
+  color: #a099a1;
 }
 
 .feed #home figure figcaption .view-all.comment-0 {
@@ -623,7 +623,7 @@ img {
   display: block;
   width: 100%;
   padding: 3px;
-  color: #888;
+  color: #a099a1;
   font-size: 9px;
   line-height: 9px;
   text-transform: uppercase;
@@ -648,11 +648,11 @@ img {
 .feed #profile a {
   width: calc(100% / 3);
   display: block;
-  border: 1px solid #C0C0C0;
+  border: 1px solid #cac6cb;
 }
 
 .feed #profile a:active {
-  border: 1px dotted black;
+  border: 1px dotted #464147;
 }
 
 .feed #profile img {
@@ -667,28 +667,28 @@ img {
 
 ::-webkit-scrollbar-track {
   background-color: white;
-  background-image: linear-gradient(45deg, #e6e6e6 25%, transparent 25%, transparent 75%, #e6e6e6 75%, #e6e6e6), linear-gradient(45deg, #e6e6e6 25%, transparent 25%, transparent 75%, #e6e6e6 75%, #e6e6e6);
+  background-image: linear-gradient(45deg, #efeef0 25%, transparent 25%, transparent 75%, #efeef0 75%, #efeef0), linear-gradient(45deg, #efeef0 25%, transparent 25%, transparent 75%, #efeef0 75%, #efeef0);
   background-size: 2px 2px;
   background-position: 0 0, 1px 1px;
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset -1px -1px 0 0 black, inset 1px 1px 0 0 #C0C0C0, inset -2px -2px 0 0 #888, inset 2px 2px 0 0 white;
-          box-shadow: inset -1px -1px 0 0 black, inset 1px 1px 0 0 #C0C0C0, inset -2px -2px 0 0 #888, inset 2px 2px 0 0 white;
+  -webkit-box-shadow: inset -1px -1px 0 0 #464147, inset 1px 1px 0 0 #cac6cb, inset -2px -2px 0 0 #a099a1, inset 2px 2px 0 0 white;
+          box-shadow: inset -1px -1px 0 0 #464147, inset 1px 1px 0 0 #cac6cb, inset -2px -2px 0 0 #a099a1, inset 2px 2px 0 0 white;
   width: 16px;
   height: 16px;
-  background-color: #C0C0C0;
+  background-color: #cac6cb;
   z-index: 1;
 }
 
 ::-webkit-scrollbar-corner {
-  background-color: #C0C0C0;
+  background-color: #cac6cb;
 }
 
 ::-webkit-resizer {
   width: 16px;
   height: 16px;
-  background-color: #C0C0C0;
+  background-color: #cac6cb;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAN0lEQVR4Ae3MgQUAMBRDwU5fFF05lb/CARTBw2Ulof0DxPtcwp3hNuEYnjbcEW4TjuFpwx3h9gMWGgZ2Y/PT2gAAAABJRU5ErkJggg==");
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -697,12 +697,12 @@ img {
 }
 
 ::-webkit-scrollbar-button {
-  -webkit-box-shadow: inset -1px -1px 0 0 black, inset 1px 1px 0 0 #C0C0C0, inset -2px -2px 0 0 #888, inset 2px 2px 0 0 white;
-          box-shadow: inset -1px -1px 0 0 black, inset 1px 1px 0 0 #C0C0C0, inset -2px -2px 0 0 #888, inset 2px 2px 0 0 white;
+  -webkit-box-shadow: inset -1px -1px 0 0 #464147, inset 1px 1px 0 0 #cac6cb, inset -2px -2px 0 0 #a099a1, inset 2px 2px 0 0 white;
+          box-shadow: inset -1px -1px 0 0 #464147, inset 1px 1px 0 0 #cac6cb, inset -2px -2px 0 0 #a099a1, inset 2px 2px 0 0 white;
   display: block;
   width: 16px;
   height: 16px;
-  background-color: #C0C0C0;
+  background-color: #cac6cb;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: pixelated;
   background-repeat: no-repeat;
@@ -746,17 +746,17 @@ img {
 }
 
 ::-webkit-scrollbar-button:active {
-  border-top: 1px solid #888;
-  border-left: 1px solid #888;
-  border-bottom: 1px solid #888;
-  border-right: 1px solid #888;
+  border-top: 1px solid #a099a1;
+  border-left: 1px solid #a099a1;
+  border-bottom: 1px solid #a099a1;
+  border-right: 1px solid #a099a1;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
 .userName {
   font-family: Tahoma, Helvetica, Arial, sans-serif;
-  color: black;
+  color: #464147;
   font-weight: 700;
   font-size: 12px;
   margin-left: 10px;
