@@ -676,3 +676,28 @@ figcaptionn button{
     }
 
 }
+
+#userform:not(:last-child){
+    display:flex;
+    flex-direction: column;
+    // : center;
+    input{
+        margin-right: 10px;
+    }
+    label{
+        margin-left: 10px;
+    }
+   
+}
+
+.formData{
+    margin-top:5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     margin-bottom: 10px;
+}
+.submitButton{
+
+    margin : 10px;
+}

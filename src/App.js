@@ -17,8 +17,8 @@ function App() {
         let data = [];
         // console.log(response.data.data.length);
   
-        for(var i =0; i < response.data.length; i++){
-            data.push(response.data[i])
+        for(var i =0; i < response.data.data.length; i++){
+            data.push(response.data.data[i])
         }
         // this.setState({todos: data})
         setMeme(data);

@@ -71,7 +71,7 @@ const clickHandler =async (event) => {
       }
 
     })
-
+    props.fetchMeme();
   }
 // -----------------------------------------------------------------------------
 // const handleImageError=(ev)=>{
@@ -86,19 +86,21 @@ const clickHandler =async (event) => {
     return (
       <>
      <form id="userform" method="POST">
-    <div><label for="owner"> Meme Owner  </label>
+    <div className="formData"><label for="owner"> Meme Owner  </label>
     <input type="text" id="owner" name="owner" onChange={nameChangeHandler} value={props.name} placeholder="Enter your name"></input>
     </div>
    
-    <div>
+    <div className="formData">
      <label for="caption" >Caption  </label>
     <input type="text" id="caption" name="caption" onChange={captionChangeHandler}  value={props.caption} placeholder="Enter caption"/>
     </div>
-     <div>
+     <div className="formData">
      <label for="image">Image URL  </label>
     <input type="url" id="image" name="img_url" onChange={imgurlChangeHandler} value={props.img_url} placeholder="Enter image url"/>
     </div>
-    <input type="submit" onClick={clickHandler}/>
+    {/* <div className="submit"> */}
+    <button type="submit" className="submitButton" onClick={clickHandler}>Submit</button>
+    {/* </div> */}
     </form> 
     <div className="temp" ></div>
     {/* <div><ul>{props.memeArray.map((memes, index) => <li key={index}>{memes.name} </li>)}</ul></div> */}

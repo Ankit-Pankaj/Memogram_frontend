@@ -44,7 +44,7 @@ function Post(props) {
   }
 
   const editHandler=async (event)=>{
-    // event.preventDefault();
+    event.preventDefault();
     // console.log(event);
     // console.log(event.target.value);
     // console.log(url,caption);
@@ -61,6 +61,8 @@ function Post(props) {
     })
     setURL("");
     setCaption("");
+    props.fetchMeme()
+
   }
 
   return (
@@ -83,7 +85,7 @@ function Post(props) {
         <span>{props.caption}</span>
       </div>
       {formVisible && (
-        <div class="edit-form">
+        <div className="edit-form">
           <input type="text" placeholder="enter caption" value={caption} onChange={captionChangeHandler}></input>
           <input type="text" placeholder="enter url" value={url} onChange={urlChangeHandler}></input>
           <button onClick={editHandler}>Submit</button>
@@ -93,3 +95,5 @@ function Post(props) {
   );
 }
 export default Post;
+
+// https://data.whicdn.com/images/238590973/original.gif

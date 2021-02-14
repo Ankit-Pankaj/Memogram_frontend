@@ -50,7 +50,7 @@ function PostContainer(props) {
       <ul>
         {props.memeArray.map((val) => (
           <li>
-            <Post url={val.url} name={val.name} likes={val.likes} caption={val.caption} id={val.id}  onClick={clickHandler} />
+            <Post url={val.url} name={val.name} likes={val.likes} caption={val.caption} id={val.id}  onClick={clickHandler} fetchMeme={props.fetchMeme} />
           </li>
         ))}
       </ul>
